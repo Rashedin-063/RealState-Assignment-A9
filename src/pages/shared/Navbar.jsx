@@ -4,7 +4,9 @@ import Menu from '../../components/Menu';
 
 const Navbar = () => {
   return (
-    <div className='navbar primary-bg rounded-md py-4 lg:py-6 px-4'>
+    <div
+      className='navbar primary-bg rounded-md py-4 lg:py-6 px-4'
+    >
       <div className='navbar-start -ml-2 lg:-ml-0'>
         {/* dropdown */}
         <div className='dropdown'>

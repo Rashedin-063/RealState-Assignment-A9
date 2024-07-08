@@ -1,6 +1,11 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import {FaEye, FaEyeSlash} from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
 
 const Register = () => {
+const [showPassword, setShowPassword] = useState(false);
+
   const handleRegister = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
@@ -16,8 +21,13 @@ const Register = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Register</title>
+      </Helmet>
       <div className='px-4'>
-        <h2 className='text-3xl mt-12 mb-8 text-center font-semibold tracking-wide'>Please Register</h2>
+        <h2 className='text-3xl mt-12 mb-8 text-center font-semibold tracking-wide'>
+          Please Register
+        </h2>
         <form
           onSubmit={handleRegister}
           className='w-3/4 lg:w-1/2 mx-auto space-y-4'
@@ -41,7 +51,6 @@ const Register = () => {
             />
           </div>
           <div className='form-control'>
-         
             <input
               type='email'
               required
@@ -50,20 +59,21 @@ const Register = () => {
               className='input input-bordered bg-slate-700'
             />
           </div>
-          <div className='form-control'>
+          <div className='form-control relative flex flex-col mt-3'>
             <input
-              type='password'
+              type={showPassword ? 'text' : 'password'}
               required
               name='password'
               placeholder='Password'
               autoComplete='new-password'
               className='input input-bordered bg-slate-700'
             />
-            <label className='label'>
-              <a href='#' className='label-text-alt link link-hover'>
-                Forgot password?
-              </a>
-            </label>
+            <span
+              onClick={() => setShowPassword(!showPassword)}
+              className='absolute top-5 right-5'
+            >
+              {showPassword ? <FaEyeSlash /> : <FaEye />}
+            </span>
           </div>
           <div className='form-control mt-6'>
             <button className='btn btn-primary'>Register</button>
