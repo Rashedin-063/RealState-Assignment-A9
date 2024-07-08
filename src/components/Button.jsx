@@ -5,9 +5,9 @@ const Button = ({label, type}) => {
     'px-4 py-2 rounded-md text-white hover:text-black -mt-2 md:-mt-0 text-sm';
 
   if (type === 'primary') {
-    buttonClass += ' bg-primary hover:bg-success';
+    buttonClass += 'bg-slate-500 hover:bg-blue-900';
   } else if (type === 'secondary') {
-    buttonClass += 'bg-success hover:bg-primary';
+    buttonClass += 'bg-red-500 hover:bg-red-500';
   }
 
  return <button className={buttonClass}>{label}</button>;

@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 const Menu = () => {
   return (
-    <div className='lg:flex lg:gap-5'>
+    <div className='lg:flex lg:gap-5 space-y-4 lg:space-y-0'>
       <li>
         <NavLink
           to='/'
@@ -17,26 +17,38 @@ const Menu = () => {
       </li>
       <li>
         <NavLink
-          to='/listed'
+          to='/update'
           className={({ isActive }) =>
             isActive
               ? 'border-2 border-blue-300 px-3 py-1 rounded text-blue-400 font-semibold'
               : 'font-semibold hover:border-b-2 border-b-blue-600'
           }
         >
-          Listed Books
+         Update Profile
         </NavLink>
       </li>
       <li>
         <NavLink
-          to='/pages'
+          to='/login'
           className={({ isActive }) =>
             isActive
               ? 'border-2 border-blue-300 px-3 py-1 rounded text-blue-400 font-semibold'
               : 'font-semibold hover:border-b-2 border-b-blue-600'
           }
         >
-          Read Pages
+          Login
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to='/register'
+          className={({ isActive }) =>
+            isActive
+              ? 'border-2 border-blue-300 px-3 py-1 rounded text-blue-400 font-semibold'
+              : 'font-semibold hover:border-b-2 border-b-blue-600'
+          }
+        >
+        Register
         </NavLink>
       </li>
       <li>
@@ -45,22 +57,10 @@ const Menu = () => {
           className={({ isActive }) =>
             isActive
               ? 'border-2 border-blue-300 px-3 py-1 rounded text-blue-400 font-semibold'
-              : 'font-semibold hover:border-b-2 border-b-blue-600'
-          }
-        >
-          About
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to='/contact'
-          className={({ isActive }) =>
-            isActive
-              ? 'border-2 border-blue-300 px-3 py-1 rounded text-blue-400 font-semibold'
               : 'font-semibold hover:border-b-2 hover:border-b-blue-600'
           }
         >
-          Contact
+          About
         </NavLink>
       </li>
     </div>

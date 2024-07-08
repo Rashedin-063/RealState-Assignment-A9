@@ -4,7 +4,7 @@ import Menu from '../../components/Menu';
 
 const Navbar = () => {
   return (
-    <div className='navbar bg-green-950 rounded-md pt-4 lg:pt-8 max-w-7xl mx-auto '>
+    <div className='navbar primary-bg rounded-md py-4 lg:py-6 px-4'>
       <div className='navbar-start -ml-2 lg:-ml-0'>
         {/* dropdown */}
         <div className='dropdown'>
@@ -30,7 +30,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className=' dropdown-content rounded-box z-[1] mt-3 ml-4 flex flex-col gap-2 bg-slate-500 shadow-xl w-40 pl-8 pt-6 pb-4'
+            className=' dropdown-content rounded-box z-[1] mt-3 ml-4 flex flex-col gap-4 primary-bg shadow-xl w-48 pl-8 pt-6 pb-4 font-light'
           >
             <Menu />
           </ul>
@@ -40,12 +40,14 @@ const Navbar = () => {
           to='/'
           className='text-2xl md:text-3xl lg:text-4xl font-bold cursor-pointer flex items-center -ml-2 lg:-ml-0'
         >
-          <span> Real</span>
-          <span className='text-blue-600'>State</span>
+          <span className='text-blue-300'> Relux</span>
+          <span className='text-blue-500'>.Com</span>
         </Link>
       </div>
       <div className='navbar-center hidden lg:flex'>
-        <ul className=' gap-4 px-1 text-lg '><Menu/></ul>
+        <ul className='gap-4 px-1'>
+          <Menu />
+        </ul>
       </div>
       <div className='navbar-end flex gap-2 mt-2 mr-6 md:mr-16'>
         <div className='gap-2 flex'>
