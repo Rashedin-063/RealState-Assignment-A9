@@ -4,6 +4,7 @@ import {
 } from 'react-icons/fa';
 
 import UseAuth from '../hooks/UseAuth';
+import { toast } from 'react-toastify';
 
 
 const SocialLogin = () => {
@@ -13,11 +14,16 @@ const SocialLogin = () => {
 
   const handleGoogleLogin = () => {
     googleLogin()
-    .then(() => alert('success'))
+      .then(() => toast.success('Your google login is successful')
+      )
   }
 
   const handleGithubLogin = () => {
-    githubLogin().then(() => alert('success')); }
+    githubLogin()
+      .then(() =>
+      toast.success('Your github login is successful')
+    ); 
+  }
 
   return (
     <div>
