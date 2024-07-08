@@ -6,34 +6,41 @@ import UpdateProfile from "../pages/UpdateProfile";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import About from "../pages/About";
+import PrivateRoute from "./PrivateRoute";
 
 
-const router = createBrowserRouter([{
-  path: '/',
-  element: <Root />,
-  errorElement: <ErrorPage />,
-  children: [
-    {
-      path: '/',
-      element: <Home/>
-    },
-    {
-      path: '/update',
-      element: <UpdateProfile/>
-    },
-    {
-      path: '/login',
-      element: <Login/>
-    },
-    {
-      path: '/register',
-      element: <Register/>
-    },
-    {
-      path: '/about',
-      element: <About/>
-    }
-  ]
-}])
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Root />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+      },
+      {
+        path: '/update',
+        element: <UpdateProfile />,
+      },
+      {
+        path: '/login',
+        element: <Login />,
+      },
+      {
+        path: '/register',
+        element: <Register />,
+      },
+      {
+        path: '/about',
+        element: (
+          <PrivateRoute>
+            <About />
+          </PrivateRoute>
+        ),
+      },
+    ],
+  },
+]);
 
 export default router;

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { useState } from 'react';
 import SocialLogin from '../components/SocialLogin';
@@ -10,6 +10,9 @@ import { toast } from 'react-toastify';
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
 
+  const location = useLocation();
+  const navigate = useNavigate();
+
   const { logInUser } = UseAuth();
 
   const {
@@ -20,7 +23,10 @@ const Login = () => {
 
   const onSubmit = ({ email, password }) => {
     logInUser(email, password)
-      .then(() => toast.success('Your login is successful'))
+      .then(() => {
+        toast.success('Your login is successful');
+      navigate(location?.state || '/');
+      })
       .catch(() => {
         toast.error(`Your email or Password doesn't match`);
       });
@@ -33,7 +39,7 @@ const Login = () => {
       </Helmet>
       <div>
         <h2 className='text-3xl my-10 text-center font-semibold tracking-wide'>
-          Please Login
+          Please Sign In
         </h2>
         <form
           onSubmit={handleSubmit(onSubmit)}

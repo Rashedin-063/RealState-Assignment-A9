@@ -1,12 +1,21 @@
 import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
 import Menu from '../../components/Menu';
+import UseAuth from './../../hooks/UseAuth';
+import { toast } from 'react-toastify';
+import userDefaultPic from '../../assets/user.png'
+
 
 const Navbar = () => {
+  const { user, logOutUser } = UseAuth();
+
+  const handleLogOut = () => {
+    logOutUser()
+      .then(() => toast.warning('User logout successful'));
+  }
+
   return (
-    <div
-      className='navbar primary-bg rounded-md py-4 lg:py-6 px-4'
-    >
+    <div className='navbar primary-bg rounded-md py-4 lg:py-6 px-4'>
       <div className='navbar-start -ml-2 lg:-ml-0'>
         {/* dropdown */}
         <div className='dropdown'>
@@ -52,10 +61,33 @@ const Navbar = () => {
         </ul>
       </div>
       <div className='navbar-end flex gap-2 mt-2 mr-6 md:mr-16'>
-        <div className='gap-2 flex'>
-          <Button label='Sign In' type='primary'></Button>
-          <Button type='secondary' label='Sign Up'></Button>
-        </div>
+        {user ? (
+          <div className='flex gap-2 items-center '>
+            <img
+              className='h-10 w-10 rounded-full mb-2'
+              src={user.photoURL}
+              alt='User Pic'
+              title={user.displayName}
+            />
+            <Button
+              onClick={handleLogOut}
+              label='Sign Out'
+              type='secondary'
+            ></Button>
+          </div>
+        ) : (
+          <div className='flex gap-2 items-center'>
+            <img
+              className='h-10 w-10 rounded-full mb-1'
+              src={userDefaultPic}
+              alt='User Pic'
+              title='User Profile Picture'
+            />
+            <Link to='/login'>
+              <Button type='primary' label='Sign In'></Button>
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );
