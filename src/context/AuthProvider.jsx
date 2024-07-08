@@ -24,45 +24,6 @@ const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  // create user
-  const createUser = (email, password) => {
-    setLoading(true);
-    return createUserWithEmailAndPassword(auth, email, password);
-  };
-
-  // update user
-  const updateUserProfile = (name, photo) => {
-    setLoading(true);
-   return updateProfile(auth.currentUser, {
-      displayName: name,
-      photoURL: photo,
-    })
-  }
-
-  // login user
-  const logInUser = (email, password) => {
-    setLoading(true);
-    return signInWithEmailAndPassword(auth, email, password);
-  };
-
-  // google login
-  const googleLogin = () => {
-    setLoading(true)
-   return signInWithPopup(auth, googleProvider)
-  }
-
-  // github login
-  const githubLogin = () => {
-    setLoading(true)
-   return signInWithPopup(auth, githubProvider)
-  }
-
-  // sign out
-  const logOutUser = () => {
-    setLoading(true);
-    return signOut(auth);
-  };
-
   // set a observer
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -74,15 +35,77 @@ const AuthProvider = ({ children }) => {
     return () => unSubscribe();
   }, []);
 
-  console.log(user)
-  
+  // create user
+  const createUser = (email, password) => {
+    setLoading(true);
+    return createUserWithEmailAndPassword(auth, email, password);
+  };
 
-  const authInfo = { user, loading, createUser, updateUserProfile, logInUser, logOutUser, googleLogin, githubLogin };
+  const updateUserProfile = async (name, photo, email, password) => {
+    setLoading(true);
+    try {
+      await updateProfile(auth.currentUser, {
+        displayName: name,
+        photoURL: photo,
+      });
+
+      if (email !== auth.currentUser.email) {
+        await auth.currentUser.updateEmail(email);
+      }
+      if (password) {
+        await auth.currentUser.updatePassword(password);
+      }
+
+      setUser({
+        ...auth.currentUser,
+        displayName: name,
+        photoURL: photo,
+        email,
+      });
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // login user
+  const logInUser = (email, password) => {
+    setLoading(true);
+    return signInWithEmailAndPassword(auth, email, password);
+  };
+
+  // google login
+  const googleLogin = () => {
+    setLoading(true);
+    return signInWithPopup(auth, googleProvider);
+  };
+
+  // github login
+  const githubLogin = () => {
+    setLoading(true);
+    return signInWithPopup(auth, githubProvider);
+  };
+
+  // sign out
+  const logOutUser = () => {
+    setLoading(true);
+    return signOut(auth);
+  };
+
+  const authInfo = {
+    user,
+    loading,
+    createUser,
+    updateUserProfile,
+    logInUser,
+    logOutUser,
+    googleLogin,
+    githubLogin,
+  };
 
   return (
-    <AuthContext.Provider value={authInfo}>
-      {children}
-    </AuthContext.Provider>
+    <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
   );
 };
 

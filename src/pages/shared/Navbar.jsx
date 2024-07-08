@@ -4,6 +4,9 @@ import Menu from '../../components/Menu';
 import UseAuth from './../../hooks/UseAuth';
 import { toast } from 'react-toastify';
 import userDefaultPic from '../../assets/user.png'
+import Tooltip from '@mui/material/Tooltip';
+// import { styled } from '@mui/material/styles';
+import Zoom from '@mui/material/Zoom';
 
 
 const Navbar = () => {
@@ -63,12 +66,13 @@ const Navbar = () => {
       <div className='navbar-end flex gap-2 mt-2 mr-6 md:mr-16'>
         {user ? (
           <div className='flex gap-2 items-center '>
-            <img
-              className='h-10 w-10 rounded-full mb-2'
-              src={user.photoURL}
-              alt='User Pic'
-              title={user.displayName}
-            />
+            <Tooltip TransitionComponent={Zoom} title={user.displayName} arrow>
+              <img
+                className='h-10 w-10 rounded-full mb-2 lg:mb-0'
+                src={user.photoURL}
+                alt='User Pic'
+              />
+            </Tooltip>
             <Button
               onClick={handleLogOut}
               label='Sign Out'
@@ -77,12 +81,13 @@ const Navbar = () => {
           </div>
         ) : (
           <div className='flex gap-2 items-center'>
-            <img
-              className='h-10 w-10 rounded-full mb-1'
-              src={userDefaultPic}
-              alt='User Pic'
-              title='User Profile Picture'
-            />
+            <Tooltip TransitionComponent={Zoom} title='User Name' arrow>
+              <img
+                className='h-10 w-10 rounded-full mb-1 lg:mb-0'
+                src={userDefaultPic}
+                alt='User Pic'
+              />
+            </Tooltip>
             <Link to='/login'>
               <Button type='primary' label='Sign In'></Button>
             </Link>
