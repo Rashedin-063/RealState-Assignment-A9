@@ -3,7 +3,8 @@ export default {
   content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      poppins: "'Poppins', sans-serif",
+      raleway: "'Raleway', sans-serif",
+      merriweather:  "Merriweather', serif"
     },
     extend: {},
   },

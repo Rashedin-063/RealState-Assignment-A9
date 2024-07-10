@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "estate_title": "Stunning Beachfront Villa",
+    "image": "https://example.com/images/beachfront-villa.jpg",
+    "segment_name": "Beachfront Properties",
+    "description": "Experience the ultimate in luxury with this stunning beachfront villa, featuring panoramic ocean views, a private pool, and direct beach access.",
+    "price": "$4,500,000",
+    "status": "sale",
+    "area": "3500 sq ft",
+    "location": { "lat": 25.790654, "lng": -80.130045 },
+    "facilities": [
+      "Living Room",
+      "Swimming Pool",
+      "Kitchen",
+      "Home Theater",
+      "Private Beach Access"
+    ],
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "year_built": 2018
+  },
+  {
+    "id": 2,
+    "estate_title": "Modern City Penthouse",
+    "image": "https://example.com/images/city-penthouse.jpg",
+    "segment_name": "Penthouses",
+    "description": "This modern penthouse in the heart of the city offers breathtaking skyline views, state-of-the-art amenities, and luxurious finishes throughout.",
+    "price": "$3,200,000",
+    "status": "sale",
+    "area": "2800 sq ft",
+    "location": { "lat": 40.712776, "lng": -74.005974 },
+    "facilities": ["Living Room", "Rooftop Terrace", "Gym", "Gourmet Kitchen"],
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "year_built": 2020
+  },
+  {
+    "id": 3,
+    "estate_title": "Private Island Resort",
+    "image": "https://example.com/images/private-island.jpg",
+    "segment_name": "Private Islands",
+    "description": "Own your private paradise with this exclusive island resort, complete with luxurious villas, pristine beaches, and unmatched privacy.",
+    "price": "$25,000,000",
+    "status": "sale",
+    "area": "50000 sq ft",
+    "location": { "lat": 18.109581, "lng": -77.297508 },
+    "facilities": [
+      "Living Room",
+      "Swimming Pool",
+      "Multiple Villas",
+      "Private Beach",
+      "Helipad"
+    ],
+    "bedrooms": 10,
+    "bathrooms": 12,
+    "year_built": 2015
+  },
+  {
+    "id": 4,
+    "estate_title": "Luxurious Mountain Retreat",
+    "image": "https://example.com/images/mountain-retreat.jpg",
+    "segment_name": "Resorts",
+    "description": "Nestled in the mountains, this luxurious retreat offers a perfect blend of tranquility and modern amenities, ideal for a relaxing getaway.",
+    "price": "$2,800,000",
+    "status": "sale",
+    "area": "4000 sq ft",
+    "location": { "lat": 39.739236, "lng": -104.990251 },
+    "facilities": [
+      "Living Room",
+      "Fireplace",
+      "Outdoor Hot Tub",
+      "Gourmet Kitchen",
+      "Hiking Trails"
+    ],
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "year_built": 2017
+  },
+  {
+    "id": 5,
+    "estate_title": "Elegant Lakeside Villa",
+    "image": "https://example.com/images/lakeside-villa.jpg",
+    "segment_name": "Villas",
+    "description": "This elegant lakeside villa offers serene water views, a private dock, and luxurious interiors, making it a perfect retreat.",
+    "price": "$3,000,000",
+    "status": "sale",
+    "area": "3200 sq ft",
+    "location": { "lat": 34.052235, "lng": -118.243683 },
+    "facilities": [
+      "Living Room",
+      "Swimming Pool",
+      "Private Dock",
+      "Gourmet Kitchen",
+      "Home Office"
+    ],
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "year_built": 2019
+  },
+  {
+    "id": 6,
+    "estate_title": "Grand Seaside Mansion",
+    "image": "https://example.com/images/seaside-mansion.jpg",
+    "segment_name": "Mansions",
+    "description": "This grand seaside mansion features expansive living spaces, stunning ocean views, and top-of-the-line amenities for a luxurious lifestyle.",
+    "price": "$8,500,000",
+    "status": "sale",
+    "area": "7000 sq ft",
+    "location": { "lat": 36.778259, "lng": -119.417931 },
+    "facilities": [
+      "Living Room",
+      "Swimming Pool",
+      "Home Theater",
+      "Wine Cellar",
+      "Private Beach Access"
+    ],
+    "bedrooms": 6,
+    "bathrooms": 7,
+    "year_built": 2016
+  },
+  {
+    "id": 7,
+    "estate_title": "Charming Countryside Estate",
+    "image": "https://example.com/images/countryside-estate.jpg",
+    "segment_name": "Estates",
+    "description": "This charming countryside estate offers expansive grounds, a cozy interior, and all the modern amenities for comfortable living.",
+    "price": "$1,900,000",
+    "status": "sale",
+    "area": "4500 sq ft",
+    "location": { "lat": 51.165691, "lng": 10.451526 },
+    "facilities": [
+      "Living Room",
+      "Gardens",
+      "Swimming Pool",
+      "Gourmet Kitchen",
+      "Stables"
+    ],
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "year_built": 2010
+  },
+  {
+    "id": 8,
+    "estate_title": "Exclusive Urban Loft",
+    "image": "https://example.com/images/urban-loft.jpg",
+    "segment_name": "Lofts",
+    "description": "Located in the heart of the city, this exclusive urban loft offers modern design, open spaces, and top-tier amenities for urban living.",
+    "price": "$1,500,000",
+    "status": "sale",
+    "area": "2500 sq ft",
+    "location": { "lat": 37.774929, "lng": -122.419416 },
+    "facilities": [
+      "Living Room",
+      "Rooftop Deck",
+      "Gym",
+      "Gourmet Kitchen",
+      "Home Office"
+    ],
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "year_built": 2021
+  }
+]

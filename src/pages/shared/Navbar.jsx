@@ -18,7 +18,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className='navbar primary-bg rounded-md py-4 lg:py-6 px-4'>
+    <div className='navbar primary-bg rounded-md py-4 lg:py-6'>
       <div className='navbar-start -ml-2 lg:-ml-0'>
         {/* dropdown */}
         <div className='dropdown'>
@@ -44,7 +44,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className=' dropdown-content rounded-box z-[1] mt-3 ml-4 flex flex-col gap-4 primary-bg shadow-xl w-48 pl-8 pt-6 pb-4 font-light'
+            className=' dropdown-content rounded-box z-[1] mt-3 ml-4 flex flex-col gap-4 primary-bg shadow-xl w-48 pl-8 pt-6 pb-4 font-light z-10'
           >
             <Menu />
           </ul>
@@ -63,7 +63,7 @@ const Navbar = () => {
           <Menu />
         </ul>
       </div>
-      <div className='navbar-end flex gap-2 mt-2 mr-6 md:mr-16'>
+      <div className='navbar-end flex gap-2 mt-2 md:mr-16'>
         {user ? (
           <div className='flex gap-2 items-center '>
             <Tooltip TransitionComponent={Zoom} title={user.displayName} arrow>
