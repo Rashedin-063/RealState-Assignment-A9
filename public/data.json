@@ -2,9 +2,9 @@
   {
     "id": 1,
     "estate_title": "Stunning Beachfront Villa",
-    "image": "https://example.com/images/beachfront-villa.jpg",
+    "image": "https://i.ibb.co/kg2rsvn/beachfron-villa.jpg",
     "segment_name": "Beachfront Properties",
-    "description": "Experience the ultimate in luxury with this stunning beachfront villa, featuring panoramic ocean views, a private pool, and direct beach access.",
+    "description": "Experience the ultimate in luxury with this stunning beachfront villa, featuring ocean views, a private pool, and direct beach access.",
     "price": "$4,500,000",
     "status": "sale",
     "area": "3500 sq ft",
@@ -23,7 +23,7 @@
   {
     "id": 2,
     "estate_title": "Modern City Penthouse",
-    "image": "https://example.com/images/city-penthouse.jpg",
+    "image": "https://i.ibb.co/XzKgDGX/modern-city-penthouse.webp",
     "segment_name": "Penthouses",
     "description": "This modern penthouse in the heart of the city offers breathtaking skyline views, state-of-the-art amenities, and luxurious finishes throughout.",
     "price": "$3,200,000",
@@ -38,11 +38,11 @@
   {
     "id": 3,
     "estate_title": "Private Island Resort",
-    "image": "https://example.com/images/private-island.jpg",
+    "image": "https://i.ibb.co/sJ6By5x/banner1.jpg",
     "segment_name": "Private Islands",
-    "description": "Own your private paradise with this exclusive island resort, complete with luxurious villas, pristine beaches, and unmatched privacy.",
-    "price": "$25,000,000",
-    "status": "sale",
+    "description": "Rent our private paradise with this exclusive island resort, complete with luxurious villas, pristine beaches, and unmatched privacy.",
+    "price": "$2,50,000",
+    "status": "rent",
     "area": "50000 sq ft",
     "location": { "lat": 18.109581, "lng": -77.297508 },
     "facilities": [
@@ -59,11 +59,11 @@
   {
     "id": 4,
     "estate_title": "Luxurious Mountain Retreat",
-    "image": "https://example.com/images/mountain-retreat.jpg",
+    "image": "https://i.ibb.co/SPRR5wt/mountain-retreat.jpg",
     "segment_name": "Resorts",
     "description": "Nestled in the mountains, this luxurious retreat offers a perfect blend of tranquility and modern amenities, ideal for a relaxing getaway.",
     "price": "$2,800,000",
-    "status": "sale",
+    "status": "rent",
     "area": "4000 sq ft",
     "location": { "lat": 39.739236, "lng": -104.990251 },
     "facilities": [
@@ -80,7 +80,7 @@
   {
     "id": 5,
     "estate_title": "Elegant Lakeside Villa",
-    "image": "https://example.com/images/lakeside-villa.jpg",
+    "image": "https://i.ibb.co/b2djJWY/banner5.jpg",
     "segment_name": "Villas",
     "description": "This elegant lakeside villa offers serene water views, a private dock, and luxurious interiors, making it a perfect retreat.",
     "price": "$3,000,000",
@@ -101,7 +101,7 @@
   {
     "id": 6,
     "estate_title": "Grand Seaside Mansion",
-    "image": "https://example.com/images/seaside-mansion.jpg",
+    "image": "https://i.ibb.co/5Bzx8ry/seaside-masnsion.jpg",
     "segment_name": "Mansions",
     "description": "This grand seaside mansion features expansive living spaces, stunning ocean views, and top-of-the-line amenities for a luxurious lifestyle.",
     "price": "$8,500,000",
@@ -122,7 +122,7 @@
   {
     "id": 7,
     "estate_title": "Charming Countryside Estate",
-    "image": "https://example.com/images/countryside-estate.jpg",
+    "image": "https://i.ibb.co/mzXLXCv/EXT-Aerial-28.webp",
     "segment_name": "Estates",
     "description": "This charming countryside estate offers expansive grounds, a cozy interior, and all the modern amenities for comfortable living.",
     "price": "$1,900,000",
@@ -143,7 +143,7 @@
   {
     "id": 8,
     "estate_title": "Exclusive Urban Loft",
-    "image": "https://example.com/images/urban-loft.jpg",
+    "image": "https://i.ibb.co/74n0wdS/banner4.jpg",
     "segment_name": "Lofts",
     "description": "Located in the heart of the city, this exclusive urban loft offers modern design, open spaces, and top-tier amenities for urban living.",
     "price": "$1,500,000",

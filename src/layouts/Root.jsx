@@ -4,10 +4,10 @@ import Footer from '../pages/shared/Footer';
 
 const Root = () => {
   return (
-    <div className='space-y-8 font-raleway'>
+    <div className='space-y-8 font-raleway px-2 lg:px-0 primary-bg'>
       <div className='max-w-7xl mx-auto'>
         <Navbar />
-        <div className='min-h-[73vh] lg:min-h-[69vh]'>
+        <div>
           <Outlet />
         </div>
       </div>

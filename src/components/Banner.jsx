@@ -83,7 +83,7 @@ const Banner = () => {
               <p
                 data-aos='zoom-in'
                 data-aos-duration='3000'
-                className=' text-base lg:text-lg text-gray-300 font-medium p-3 lg:p-10 bg-slate-600 max-w-2xl bg-opacity-85 absolute bottom-8 lg:right-4 rounded-xl shadow-lg pl-4 lg:pl-0'
+                className=' text-base lg:text-lg text-gray-300 font-medium p-3 lg:p-10 bg-slate-600 max-w-2xl bg-opacity-85 absolute bottom-8 lg:right-4 rounded-xl shadow-lg pl-4'
               >
                 Discover a world of opulence at Relux.com, where every property
                 is a masterpiece. From beachfront paradises to exclusive private
@@ -116,7 +116,7 @@ const Banner = () => {
               <p
                 data-aos='zoom-in'
                 data-aos-duration='3000'
-                className=' text-base lg:text-lg text-gray-300 font-medium p-3 lg:p-10 bg-slate-600 max-w-2xl bg-opacity-85 absolute bottom-8 lg:right-4 rounded-xl shadow-lg pl-4 lg:pl-0'>
+                className=' text-base lg:text-lg text-gray-300 font-medium p-3 lg:p-10 bg-slate-600 max-w-2xl bg-opacity-85 absolute bottom-8 lg:right-4 rounded-xl shadow-lg pl-4'>
                 Step into a world of elegance and exclusivity at Relux.com.
                 Explore our portfolio of prestigious estates, each designed to
                 embody sophistication and timeless beauty.

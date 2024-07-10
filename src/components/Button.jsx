@@ -2,12 +2,12 @@ import PropTypes from 'prop-types';
 
 const Button = ({label, type, onClick}) => {
   let buttonClass =
-    'px-4 py-2 rounded-md text-white hover:text-black -mt-2 md:-mt-0 text-sm';
+    'px-4 py-2 rounded-lg text-white -mt-2 md:-mt-0 font-medium shadow-md';
 
    if (type === 'primary') {
-     buttonClass += ' bg-blue-600 hover:bg-blue-300';
+     buttonClass += ' bg-blue-600 hover:bg-blue-800';
    } else if (type === 'secondary') {
-     buttonClass += ' bg-yellow-600 hover:bg-yellow-300';
+     buttonClass += ' bg-yellow-700 hover:bg-yellow-800';
   }
 
  return (
