@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className='bg-slate-950'>
       <div>
-        <footer className='footer text-neutral-content items-center p-4 py-8 max-w-7xl mx-auto flex justify-between'>
+        <footer className='footer text-neutral-content items-center px-8 py-6 max-w-7xl mx-auto flex justify-between '>
           <aside className=' items-center'>
             <div className='flex gap-4 items-center'>
               <svg
@@ -32,7 +32,7 @@ const Footer = () => {
               </div>
             </div>
           </aside>
-          <nav className='grid-flow-col gap-4 place-self-center justify-self-end'>
+          <nav className='grid-flow-col gap-4 place-self-center justify-self-end lg:pr-8'>
             <a>
               <svg
                 xmlns='http://www.w3.org/2000/svg'

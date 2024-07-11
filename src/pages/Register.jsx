@@ -59,7 +59,7 @@ const Register = () => {
 }
 
   return (
-    <div>
+    <div className='min-h-[64vh]'>
       <Helmet>
         <title>Register</title>
       </Helmet>

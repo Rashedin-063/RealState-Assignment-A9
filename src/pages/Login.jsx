@@ -95,7 +95,7 @@ const Login = () => {
           </div>
           <SocialLogin />
         </form>
-        <p className='text-center mt-8 bg-gray-800 p-2 w-3/4 mx-auto rounded shadow-lg'>
+        <p className='text-center mt-8 bg-gray-800 p-3 w-3/4 lg:w-1/2 mx-auto rounded shadow-lg'>
           Do not have an account{' '}
           <Link className='text-blue-600 font-bold' to='/register'>
             Register

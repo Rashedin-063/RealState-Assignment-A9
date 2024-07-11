@@ -5,8 +5,8 @@ const Bookmark = () => {
   console.log(bookmarkedDataArray)
   
   return (
-    <div className="min-h-[60vh] mt-16">
-      <h2 className="text-center mb-4 text-4xl bg-slate-900 w-1/2 mx-auto p-2 rounded-md">this is bookmark</h2>
+    <div className="min-h-[60vh] mt-12 lg:mt-16">
+      <h2 className="text-center mb-4 text-4xl bg-slate-900 w-3/4 mx-auto p-2 rounded-md">this is bookmark</h2>
       {bookmarkedDataArray.map((bookmarkedData, idx) => (
         <div key={bookmarkedData.id}>
           <div className="text-center bg-slate-700 w-3/4 mx-auto p-2 rounded-md mb-2 shadow-lg text-lg">
