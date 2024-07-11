@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className='primary-bg'>
+    <div className='bg-slate-950'>
       <div>
-        <footer className='footer text-neutral-content items-center p-4 max-w-7xl mx-auto flex justify-between'>
+        <footer className='footer text-neutral-content items-center p-4 py-8 max-w-7xl mx-auto flex justify-between'>
           <aside className=' items-center'>
             <div className='flex gap-4 items-center'>
               <svg

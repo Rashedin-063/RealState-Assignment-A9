@@ -3,6 +3,7 @@ import Banner from '../components/Banner';
 import { useLoaderData } from 'react-router-dom';
 import EstateSection from '../components/EstateSection';
 import ClientReview from '../components/ClientReview';
+import FAQSection from '../components/FAQSection';
 
 const Home = () => {
   const data = useLoaderData();
@@ -14,6 +15,7 @@ const Home = () => {
       </Helmet>
       <Banner />
       <EstateSection data={data} />
+      <FAQSection/>
       <ClientReview/>
     </div>
   );

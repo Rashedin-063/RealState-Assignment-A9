@@ -36,7 +36,7 @@ const EstateSection = ({ data }) => {
       </div>
       <div
         data-aos='zoom-in'
-        data-aos-duration='3000'
+        data-aos-duration='2000'
         onClick={() => setDataLength(data.length)} className={dataLength === data.length ? 'hidden mt-8' : 'mt-8'}>
         <Button type='secondary' label='Show All'></Button>
       </div>
