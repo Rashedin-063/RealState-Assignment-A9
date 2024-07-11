@@ -72,10 +72,10 @@ const Banner = () => {
               <h1
                 data-aos='fade-down'
                 data-aos-duration='3000'
-                className=' text-4xl lg:text-7xl text-gray-100 font-semibold p-5 lg:p-16 '
+                className='text-2xl md:text-4xl lg:text-7xl text-gray-100 font-semibold p-5 lg:p-16 '
               >
                 Welcome to Relux.com{' '}
-                <span className='text-2xl block mt-3 opacity-85'>
+                <span className='text-xl md:text-2xl block mt-3 opacity-85'>
                   Exquisite Homes, Extraordinary Lives
                 </span>
               </h1>
@@ -83,7 +83,7 @@ const Banner = () => {
               <p
                 data-aos='zoom-in'
                 data-aos-duration='3000'
-                className=' text-base lg:text-lg text-gray-300 font-medium p-3 lg:p-10 bg-slate-600 max-w-2xl bg-opacity-85 absolute bottom-8 lg:right-4 rounded-xl shadow-lg pl-4'
+                className='text-sm md:text-base lg:text-lg text-gray-300 font-medium p-3 lg:p-10 bg-slate-600 max-w-2xl bg-opacity-85 absolute bottom-8 lg:right-4 rounded-xl shadow-lg pl-4'
               >
                 Discover a world of opulence at Relux.com, where every property
                 is a masterpiece. From beachfront paradises to exclusive private
@@ -108,7 +108,7 @@ const Banner = () => {
               <h1
                 data-aos='fade-in'
                 data-aos-duration='3000'
-                className=' text-4xl lg:text-5xl text-gray-200 font-semibold p-2 lg:p-4 bg-slate-600 bg-opacity-45 rounded-xl pl-4 lg:pl-2 tracking-tighter lg:tracking-normal pt-4 '>
+                className='text-2xl md:text-4xl lg:text-5xl text-gray-200 font-semibold p-2 lg:p-4 bg-slate-600 bg-opacity-45 rounded-xl pl-4 lg:pl-2 tracking-tighter lg:tracking-normal pt-4 '>
                 Exclusive Estates, Endless Elegance
                 <span className='text-2xl block mt-3 opacity-85'></span>
               </h1>
@@ -116,7 +116,7 @@ const Banner = () => {
               <p
                 data-aos='zoom-in'
                 data-aos-duration='3000'
-                className=' text-base lg:text-lg text-gray-300 font-medium p-3 lg:p-10 bg-slate-600 max-w-2xl bg-opacity-85 absolute bottom-8 lg:right-4 rounded-xl shadow-lg pl-4'>
+                className='text-sm  md:text-base lg:text-lg text-gray-300 font-medium p-3 lg:p-10 bg-slate-600 max-w-2xl bg-opacity-85 absolute bottom-8 lg:right-4 rounded-xl shadow-lg pl-4'>
                 Step into a world of elegance and exclusivity at Relux.com.
                 Explore our portfolio of prestigious estates, each designed to
                 embody sophistication and timeless beauty.
@@ -137,12 +137,12 @@ const Banner = () => {
               borderRadius: '1rem',
             }}
           >
-            <h1 className=' text-4xl lg:text-5xl text-gray-200 font-semibold p-2 lg:p-4 bg-slate-600 bg-opacity-45 max-w-2xl rounded-xl pl-4 pt-4'>
+            <h1 className='text-2xl md:text-4xl lg:text-5xl text-gray-200 font-semibold p-2 lg:p-4 bg-slate-600 bg-opacity-45 max-w-2xl rounded-xl pl-4 pt-4'>
               Luxurious Living Redefined
               <span className='text-2xl block mt-3 opacity-85'></span>
             </h1>
 
-            <p className=' text-base lg:text-lg text-gray-300 font-medium p-3 lg:p-10 bg-slate-600 max-w-2xl bg-opacity-85 absolute bottom-8 lg:right-4 rounded-xl shadow-lg pl-4'>
+            <p className='text-sm md:text-base lg:text-lg text-gray-300 font-medium p-3 lg:p-10 bg-slate-600 max-w-2xl bg-opacity-85 absolute bottom-8 lg:right-4 rounded-xl shadow-lg pl-4'>
               Immerse yourself in luxury at Relux.com, where each property is
               crafted to redefine upscale living. From serene beachfront
               retreats to private estates, discover your perfect sanctuary.
@@ -162,12 +162,12 @@ const Banner = () => {
               borderRadius: '1rem',
             }}
           >
-            <h1 className=' text-4xl lg:text-5xl text-gray-200 font-semibold p-2 lg:p-4 bg-slate-600 bg-opacity-65  rounded-xl pl-4 pt-4 '>
+            <h1 className='text-2xl md:text-4xl lg:text-5xl text-gray-200 font-semibold p-2 lg:p-4 bg-slate-600 bg-opacity-65  rounded-xl pl-4 pt-4 '>
               Your Gateway to Extraordinary Homes
               <span className='text-2xl block mt-3 opacity-85'></span>
             </h1>
 
-            <p className=' text-base lg:text-lg text-gray-300 font-medium p-3 lg:p-10 bg-slate-600 max-w-2xl bg-opacity-85 absolute bottom-8 lg:right-4 rounded-xl shadow-lg pl-4'>
+            <p className='text-sm  md:text-base lg:text-lg text-gray-300 font-medium p-3 lg:p-10 bg-slate-600 max-w-2xl bg-opacity-85 absolute bottom-8 lg:right-4 rounded-xl shadow-lg pl-4'>
               Discover extraordinary homes at Relux.com, where every residence
               tells a story of luxury and comfort. Whether you seek a modern
               penthouse or a historic mansion, find your dream home with us.
@@ -187,12 +187,12 @@ const Banner = () => {
               borderRadius: '1rem',
             }}
           >
-            <h1 className=' text-4xl lg:text-5xl text-gray-200 font-semibold p-2 lg:p-4 bg-slate-600 bg-opacity-45 max-w-2xl rounded-xl pt-4'>
+            <h1 className='text-2xl md:text-4xl lg:text-5xl text-gray-200 font-semibold p-2 lg:p-4 bg-slate-600 bg-opacity-45 max-w-2xl rounded-xl pt-4'>
               Seaside Serenity Awaits
               <span className='text-2xl block mt-3 opacity-85'></span>
             </h1>
 
-            <p className=' text-base lg:text-lg text-gray-300 font-medium p-3 lg:p-10 bg-slate-600 max-w-2xl bg-opacity-85 absolute bottom-8 lg:right-4 rounded-xl shadow-lg pl-4'>
+            <p className='text-sm md:text-base lg:text-lg text-gray-300 font-medium p-3 lg:p-10 bg-slate-600 max-w-2xl bg-opacity-85 absolute bottom-8 lg:right-4 rounded-xl shadow-lg pl-4'>
               Experience the tranquility of coastal living with Relux.com. Our
               collection of seaside properties offers unparalleled views and
               luxurious amenities, ensuring a life of relaxation and

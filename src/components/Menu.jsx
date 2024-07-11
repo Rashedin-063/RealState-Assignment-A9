@@ -36,7 +36,7 @@ const Menu = () => {
               : 'font-semibold hover:border-b-2 border-b-blue-600'
           }
         >
-          Login
+          Sign In
         </NavLink>
       </li>
       <li>

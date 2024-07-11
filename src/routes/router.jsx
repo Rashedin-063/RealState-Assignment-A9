@@ -7,6 +7,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import About from "../pages/About";
 import PrivateRoute from "./PrivateRoute";
+import EstateDetails from "../pages/EstateDetails";
 
 
 const router = createBrowserRouter([
@@ -18,6 +19,11 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
+        loader: () => fetch('/data.json'),
+      },
+      {
+        path: '/estate/:id',
+        element: <EstateDetails />,
         loader: () => fetch('/data.json'),
       },
       {

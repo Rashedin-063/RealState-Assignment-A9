@@ -1,4 +1,4 @@
-import q1 from '../assets/q1.webp'
+import q1 from '../assets/q1.webp';
 
 // import AOS
 import AOS from 'aos';
@@ -9,15 +9,12 @@ AOS.init();
 const FAQSection = () => {
   return (
     <div className='pt-12'>
-      <h2 className='text-4xl lg:text-5xl font-extrabold text-gray-100 mb-12 text-center'>
+      <h2 className='text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-100 mb-12 text-center'>
         Frequently Asked Questions
       </h2>
       <div className='mx-auto px-4 sm:px-6 lg:px-8 bg-blue-100 py-12 bg-opacity-30 rounded-md'>
-        <div className='flex flex-col md:flex-row gap-6'>
-          <div
-            data-aos='zoom-in'
-            data-aos-duration='2000'
-          >
+        <div className='flex flex-col lg:flex-row gap-6'>
+          <div data-aos='zoom-in' data-aos-duration='2000'>
             <img
               className='min-h-[420px] w-[1200px] rounded-3xl'
               src={q1}
@@ -25,17 +22,14 @@ const FAQSection = () => {
             />
           </div>
           {/* Accordion */}
-          <div
-            data-aos='fade-left'
-            data-aos-duration='2000'
-          >
+          <div data-aos='fade-left' data-aos-duration='2000'>
             {/* q&a 1 */}
             <div className='collapse collapse-arrow bg-base-200 mb-2'>
               <input type='radio' name='my-accordion-2' defaultChecked />
-              <div className='collapse-title text-xl font-medium'>
+              <div className='collapse-title text-lg md:text-xl font-medium'>
                 What services does Relux.com.com offer?
               </div>
-              <div className='collapse-content'>
+              <div className='text-sm md:text-base collapse-content'>
                 <p>
                   {' '}
                   Relux.com.com offers a wide range of real estate services
@@ -49,10 +43,10 @@ const FAQSection = () => {
             {/* q&a 2 */}
             <div className='collapse collapse-arrow bg-base-200 mb-2'>
               <input type='radio' name='my-accordion-2' />
-              <div className='collapse-title text-xl font-medium'>
+              <div className='collapse-title text-lg md:text-xl font-medium'>
                 How can I list my property on Relux.com?
               </div>
-              <div className='collapse-content'>
+              <div className='text-sm md:text-base collapse-content'>
                 <p>
                   {' '}
                   To list your property on Relux.com, you can contact us through
@@ -65,10 +59,10 @@ const FAQSection = () => {
             {/* q&a 3 */}
             <div className='collapse collapse-arrow bg-base-200 mb-2'>
               <input type='radio' name='my-accordion-2' />
-              <div className='collapse-title text-xl font-medium'>
+              <div className='collapse-title text-lg md:text-xl font-medium'>
                 What are the benefits of using Relux.com?
               </div>
-              <div className='collapse-content'>
+              <div className='text-sm md:text-base collapse-content'>
                 <p>
                   {' '}
                   Relux.com provides personalized service, expert market
@@ -83,10 +77,10 @@ const FAQSection = () => {
             {/* q&a 4 */}
             <div className='collapse collapse-arrow bg-base-200 mb-2'>
               <input type='radio' name='my-accordion-2' />
-              <div className='collapse-title text-xl font-medium'>
+              <div className='collapse-title text-lg md:text-xl font-medium'>
                 How do I schedule a property viewing?
               </div>
-              <div className='collapse-content'>
+              <div className='text-sm md:text-base collapse-content'>
                 <p>
                   To schedule a property viewing, you can visit the property
                   listing on our website and use the contact form to request a
@@ -99,10 +93,10 @@ const FAQSection = () => {
             {/* q&a 5 */}
             <div className='collapse collapse-arrow bg-base-200 mb-2'>
               <input type='radio' name='my-accordion-2' />
-              <div className='collapse-title text-xl font-medium'>
+              <div className='collapse-title text-lg md:text-xl font-medium'>
                 What should I consider when buying a luxury property?
               </div>
-              <div className='collapse-content'>
+              <div className='text-sm md:text-base collapse-content'>
                 <p>
                   When buying a luxury property, it's important to consider
                   factors such as location, amenities, future resale value, and
