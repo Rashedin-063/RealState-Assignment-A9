@@ -2,13 +2,21 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Button from './Button';
 
+// import AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 const EstateCard = ({ singleData }) => {
   const { id, estate_title, image, segment_name, description, price, status } = singleData;
 
 
   return (
     <div className=''>
-      <div className='card w-full bg-slate-600 shadow-xl py-5 max-h-xl max-h-2xl text-white'>
+      <div
+        data-aos='zoom-in'
+        data-aos-duration='3000'
+        className='card w-full bg-slate-600 shadow-xl py-5 max-h-xl max-h-2xl text-white'>
         <figure className='max-w-72 h-40 mx-auto '>
           <img src={image} alt='Album' className='rounded-xl' />
         </figure>

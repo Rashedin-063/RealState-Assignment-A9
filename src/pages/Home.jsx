@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import Banner from '../components/Banner';
 import { useLoaderData } from 'react-router-dom';
 import EstateSection from '../components/EstateSection';
+import ClientReview from '../components/ClientReview';
 
 const Home = () => {
   const data = useLoaderData();
@@ -13,6 +14,7 @@ const Home = () => {
       </Helmet>
       <Banner />
       <EstateSection data={data} />
+      <ClientReview/>
     </div>
   );
 };
