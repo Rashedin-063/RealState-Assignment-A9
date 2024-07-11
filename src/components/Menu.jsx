@@ -24,7 +24,7 @@ const Menu = () => {
               : 'font-semibold hover:border-b-2 border-b-blue-600'
           }
         >
-         Update Profile
+          Update Profile
         </NavLink>
       </li>
       <li>
@@ -48,7 +48,19 @@ const Menu = () => {
               : 'font-semibold hover:border-b-2 border-b-blue-600'
           }
         >
-        Register
+          Register
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to='/bookmark'
+          className={({ isActive }) =>
+            isActive
+              ? 'border-2 border-blue-300 px-3 py-1 rounded text-blue-400 font-semibold'
+              : 'font-semibold hover:border-b-2 border-b-blue-600'
+          }
+        >
+          Bookmark
         </NavLink>
       </li>
       <li>

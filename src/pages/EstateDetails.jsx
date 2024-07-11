@@ -2,7 +2,16 @@ import { useState } from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 import Button from '../components/Button';
 import { FaHandPointRight } from 'react-icons/fa';
-import { IoArrowForwardCircle } from 'react-icons/io5';
+// import map
+import {
+  MapContainer,
+  TileLayer,
+  Marker, Popup
+} from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+import { saveDataToLS } from '../utility/localStorage';
+
+
 
 const EstateDetails = () => {
   const [bookmark, setBookmark] = useState(true);
@@ -29,10 +38,14 @@ const EstateDetails = () => {
     bathrooms,
   } = selectedData;
 
+  const handleAddToCart = selectedData => {
+  saveDataToLS(selectedData)
+}
+
   return (
-    <div className='mt-8'>
-      <div className='grid gid-cols-2 lg:grid-cols-5 gap-3 lg:gap-6'>
-        <div className='lg:col-span-3 bg-slate-600 bg-opacity-60 h-[75vh] rounded-md'>
+    <div className='mt-2 lg:mt-8'>
+      <div className='grid gid-cols-2 lg:grid-cols-6 gap-3 lg:gap-6'>
+        <div className='lg:col-span-3 bg-slate-600 bg-opacity-60 rounded-md lg:h-[570px]'>
           <div className='items-center -mt-4 text-white space-y-5 pl-6'>
             <h2 className='text-4xl font-semibold pt-12 lg:pt-16'>
               {estate_title}
@@ -105,35 +118,53 @@ const EstateDetails = () => {
             </div>
             <div
               onClick={() => setBookmark(!bookmark)}
-              className=' flex justify-center '
+              className=' flex justify-center pb-4'
             >
               {bookmark ? (
-                <Link>
+                <a onClick={() => handleAddToCart(selectedData)}>
                   <Button type='primary' label='Add to Bookmark' />
-                </Link>
+                </a>
               ) : (
-                <Link>
+                <Link to='/bookmark'>
                   <Button type='secondary' label='View All Bookmark' />
                 </Link>
               )}
             </div>
           </div>
         </div>
-        <div className='lg:col-span-2'>
+        <div className='lg:col-span-3'>
           <img className='w-full h-1/3 rounded-md' src={image} alt='' />
           <div className='mt-4'>
             <h2 className='text-center text-lg pb-4 text-gray-50'>
               Location:{' '}
-              <span className='text-yellow-300 text-xl font-semibold ml-4'>
+              <span className='text-yellow-300 text-xl font-semibold ml-2'>
                 {location.lat}
               </span>{' '}
               latitude,
-              <span className='text-yellow-300 text-xl font-semibold ml-4'>
+              <span className='text-yellow-300 text-xl font-semibold ml-8'>
                 {location.lng}
               </span>{' '}
               longitude
             </h2>
-            <img className='w-full h-[267px] rounded-md' src={image} alt='' />
+
+            <div>
+              <MapContainer
+                center={[location.lat, location.lng]}
+                zoom={13}
+                scrollWheelZoom={false}
+                style={{ height: '275px', width: '100%' }}
+              >
+                <TileLayer
+                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                  url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+                />
+                <Marker position={[location.lat, location.lng]}>
+                  <Popup>
+                    A pretty CSS3 popup. <br /> Easily customizable.
+                  </Popup>
+                </Marker>
+              </MapContainer>
+            </div>
           </div>
         </div>
       </div>

@@ -1,14 +1,14 @@
-import { createBrowserRouter } from "react-router-dom";
-import Root from "../layouts/Root";
-import ErrorPage from "../error/ErrorPage";
-import Home from "../pages/Home";
-import UpdateProfile from "../pages/UpdateProfile";
-import Login from "../pages/Login";
-import Register from "../pages/Register";
-import About from "../pages/About";
-import PrivateRoute from "./PrivateRoute";
-import EstateDetails from "../pages/EstateDetails";
-
+import { createBrowserRouter } from 'react-router-dom';
+import Root from '../layouts/Root';
+import ErrorPage from '../error/ErrorPage';
+import Home from '../pages/Home';
+import UpdateProfile from '../pages/UpdateProfile';
+import Login from '../pages/Login';
+import Register from '../pages/Register';
+import About from '../pages/About';
+import PrivateRoute from './PrivateRoute';
+import EstateDetails from '../pages/EstateDetails';
+import Bookmark from '../pages/Bookmark';
 
 const router = createBrowserRouter([
   {
@@ -23,7 +23,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/estate/:id',
-        element: <EstateDetails />,
+        element: (
+          <PrivateRoute>
+            <EstateDetails />
+          </PrivateRoute>
+        ),
         loader: () => fetch('/data.json'),
       },
       {
@@ -43,12 +47,16 @@ const router = createBrowserRouter([
         element: <Register />,
       },
       {
-        path: '/about',
+        path: '/bookmark',
         element: (
           <PrivateRoute>
-            <About />
+            <Bookmark />
           </PrivateRoute>
         ),
+      },
+      {
+        path: '/about',
+        element: <About />,
       },
     ],
   },

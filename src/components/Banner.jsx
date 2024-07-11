@@ -35,7 +35,7 @@ const Banner = () => {
       AOS.refresh();
     };
   return (
-    <div className='mt-8 text-justify'>
+    <div className='mt-2 lg:mt-6 text-justify'>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
