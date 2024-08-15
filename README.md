@@ -3,7 +3,7 @@
 A simple real estate related webpage created using react, react-router-dom and firebase authentication
 
 # Live Link
-[Visit BookWorm](https://a9-real-estate-9f975.web.app)
+[Visit Relux.com](https://a9-real-estate-9f975.web.app)
 
 
 # Features & Characteristics
